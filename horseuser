@@ -1,0 +1,15 @@
+//Simple horse class by Deegan
+//for Software Development class 2025
+
+public class Horseuser {
+    public static void main(String[] args){
+        int a;
+        int b=100;
+        Horse Horse1 = new Horse("Spirit", 2015);
+        Horse Horse2 = new Horse("Silver", 2018);
+        Horse Horse3 = new Horse("Black Beauty", 2020);
+        System.out.println(Horse1);
+        System.out.println(Horse2);
+        System.out.println(Horse3);
+    }
+}
