@@ -1,4 +1,4 @@
-public class redshirt extends shirt {
+public class redshirt extends shirt implements comparable<redshirt> {
     private String brandName;
 
 
@@ -22,9 +22,25 @@ public class redshirt extends shirt {
         System.out.println("This is a red shirt!");
     }
 
+    @Override
+    public int compareTo(redshirt other) {
+        return this.getSize().compareTo(other.getSize());
+    }
+
     public static void main(String[] args) {
         redshirt myRedShirt = new redshirt("medium", "red", "Nike");
         myRedShirt.displayShirtDetails();
+
+        redshirt anotherShirt = new redshirt("large", "red", "Adidas");
+        int comparisonResult = myRedShirt.compareTo(anotherShirt);
+
+        if (comparisonResult < 0) {
+            System.out.println("\n" + myRedShirt.getSize() + " comes before " + anotherShirt.getSize() + " alphabetically.");
+        } else if (comparisonResult > 0) {
+            System.out.println("\n" + myRedShirt.getSize() + " comes after " + anotherShirt.getSize() + " alphabetically.");
+        } else {
+            System.out.println("\n" + myRedShirt.getSize() + " and " + anotherShirt.getSize() + " are the same.");
+        }
     }
 
 }
