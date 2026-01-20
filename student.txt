@@ -1,0 +1,14 @@
+def main():
+    name = input("Enter your name (first and last): ").strip()
+    year = input("What Year of school are you (e.g., 11th):").strip()
+    school = input("Enter the name of your school: ").strip()
+
+    with open("student.txt", "w", encoding="utf-8") as file:
+        file.write(f"{name}\n")
+        file.write(f"{year}\n")
+        file.write(f"{school}\n")
+
+        print("Wrote student.txt with your name, year, and school. (one per line).")
+
+if __name__ == "__main__":
+    main()
