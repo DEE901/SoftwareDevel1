@@ -1,3 +1,7 @@
+//by Deegan Hansen
+//for software class project
+//student info
+
 import java.io.BufferedReader;
 import java.io.Filewriter;
 import java.io.IOException;
@@ -32,3 +36,4 @@ public class StudentInfo {
         }
     }
 }
+
