@@ -1,3 +1,7 @@
+//by Deegan Hansen
+//for software class project
+//student info reader
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -25,4 +29,5 @@ public class ReadStudent {
             System.err.println("Error reading " + fileName + ": " + e.getMessage());
         }
     }
+
 }
